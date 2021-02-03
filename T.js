@@ -7,7 +7,7 @@ $.ajax({
         var 现 = boom.attr('temNow');
 		var 类 = boom.attr('stateDetailed');
         var 时 = boom.attr('time');
-        $('#气').html(现+'℃ '+类);
+        $('#气').html(TESTING);
     }
 }
 );
