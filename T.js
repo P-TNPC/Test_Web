@@ -1,5 +1,1 @@
-$.ajax({
-    $('#气').html(TESTING);
-    }
-}
-);
+$('#气').html(TESTING);
