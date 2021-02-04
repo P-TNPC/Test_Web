@@ -26,13 +26,13 @@ function 计(){
 
     	//var 闪 = '时间 行 点';
 
-       	document.getElementById("点").className='时间 行 点';
+       	document.getElementById("点").innerHTML=':';
 
     }else{
 
     	//var 闪 = '时间 行 占';
 
-       	document.getElementById("点").className='时间 行 占';
+       	document.getElementById("点").innerHTML=' ';
 
     }
 
