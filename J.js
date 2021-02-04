@@ -19,23 +19,23 @@ function 计(){
     var 秒 = 今.getSeconds();//if(秒 < 10){秒 = '0'+秒};
 
     var 日期 = 月+'.'+日+' '+周;
+    	
 
-    	console.log(标)
+	document.getElementById("主").className='主 中';
 
     if(秒%2){
 
     	//var 闪 = '时间 行 点';
 
-       	document.getElementById("点").innerHTML=':';
+       	document.getElementById("点").className='时间 行 点';
 
     }else{
 
     	//var 闪 = '时间 行 占';
 
-       	document.getElementById("点").innerHTML=' ';
+       	document.getElementById("点").className='时间 行 占';
 
     }
-
     
 
     if(分!=标){
