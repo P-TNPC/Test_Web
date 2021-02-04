@@ -1,6 +1,4 @@
-setInterval("计()",1000)
-
-var 标;
+setInterval("计()",1000);
 
 function 计(){
 
@@ -38,10 +36,6 @@ function 计(){
     }
     
 
-    if(分!=标){
-
-        标 = 分;
-
     document.getElementById("日期").innerHTML=日期;
 
     document.getElementById("时").innerHTML=时;
@@ -51,7 +45,5 @@ function 计(){
     document.getElementById("分").innerHTML=分;
 
     //document.getElementById("秒").innerHTML=秒;
-
-    }
 
 }
