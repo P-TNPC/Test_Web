@@ -19,7 +19,7 @@ function 计(){
     var 日期 = 月+'.'+日+' '+周;
     	
 
-	document.getElementById("主").className='主 中';
+	document.getElementById("总").className='总 中';
 
     if(秒%2){
 
