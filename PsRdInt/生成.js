@@ -51,5 +51,5 @@ function 生(量,小,大){
     return 组.toString().replace(/,/g,", ");
 }
 function 整(小,大){
-    return Math.floor(Math.random()*(大 - 小 + 1) ) + 小;
+    return Math.floor(Math.random()*(大 - 小 + 1)) + parseInt(小);
 }
