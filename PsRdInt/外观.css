@@ -127,7 +127,7 @@ input:focus{
     color: hsla(192,0%,100%,1);
     font-size: 20px;
     font-weight: 500;
-    z-index: 0;
+    z-index: 1;
 }
 .隐{
     background-color: hsla(192,23.7%,70.2%,0.4)!important;
@@ -228,8 +228,8 @@ input:focus{
         margin-top: 14.5px;
         margin-right: 95px;
         min-width: 400px;
-        box-shadow: inset 0 0 24px hsla(192,43.7%,60.2%,0.3);
-        background-color: hsla(192,43.7%,96.2%,0.1);
+        box-shadow: inset 0 0 20px hsla(192,40.7%,60.2%,0.25);
+        background-color: hsla(192,33.7%,99.2%,0.1);
     }
     #栏 p{
         margin: 0;
@@ -303,8 +303,8 @@ input:focus{
 	}
    	@media only screen and (min-width: 768px){
 		#栏{
-    		box-shadow: inset 0 0 24px hsla(192,23.7%,40.2%,0.3);
-        	background-color: hsla(192,43.7%,16.2%,0.1);
+    		box-shadow: inset 0 0 24px hsla(192,23.7%,36.2%,0.25);
+        	background-color: hsla(192,43.7%,8.2%,0.1);
       	}
    	}
 }
