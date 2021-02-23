@@ -1,7 +1,7 @@
 function 出(){
     var 量 = document.getElementById('量').value;
-    var 小 = document.getElementById('小').value;
-    var 大 = document.getElementById('大').value;
+    var 小 = document.getElementById('小').value;if(!小){小=0;}
+    var 大 = document.getElementById('大').value;if(!大){大=0;}
     if(小>大){
         var 介 = 小;
         	小 = 大;
