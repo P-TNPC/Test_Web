@@ -2,6 +2,8 @@ document.getElementById("生").onmousedown = function (){
     if ("vibrate" in navigator) {
 		// vibration API supported
 		navigator.vibrate([15,100,10]);
+    }else if (navigator.webkitVibrate) {
+        navigator.webkitVibrate([15,100,10]);
     }
 }
 document.addEventListener('DOMContentLoaded',
