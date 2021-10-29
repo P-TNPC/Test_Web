@@ -139,19 +139,14 @@ a{color: #505686b8;}
 }
 
 .秒{
-
     font-size: calc(var(--字大)*32px);
-
     font-family: monospace;
-
     color: #363636;
-
-    text-shadow: 0 0 5px rgba(95,80,95,0.75); 
-
+    text-shadow: 0 0 5px rgba(95,80,95,0.75);
+    transform:translateY(-10px);
 }
 
 .点{opacity: 100%;transition: opacity .5s ease-in;}
-
 .占{opacity: 0%;transition: opacity .5s ease-in;}
 
 .天气{
