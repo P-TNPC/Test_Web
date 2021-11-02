@@ -1,11 +1,8 @@
-/*{
-	border: #336699 solid 1px;
-}*/
 body{
 	margin: 0;
 }
 header{
-	height: 10vh;
+	height: 4vh;
 }
 h1{
 	--colr: #323232;
@@ -17,7 +14,7 @@ h1{
 #main{
 	--cola: #888;
 	--inwi: 292px;
-	height: 61.8vh;
+	height: 72vh;
 	width: 61.8vw;
 	position: absolute;
 	left: 0;
@@ -43,8 +40,9 @@ h1{
 	border: var(--cola) solid 0px;
 	border-radius: inherit;	
 	background: #f0f0f0;
-	text-indent: 12px;
-	color: #323232;
+	text-indent: 13.5px;
+	color: #424242;
+	font-size: 19px;
 	font-family: monospace;
 	z-index: 1;
 	transition: all .3s ease-in-out;
@@ -75,8 +73,8 @@ h1{
 	align-items: center;
 }
 #colr{
-	height: 90%;
-	width: 192px;
+	height: 85.8%;
+	width: 246px;
 	margin: auto;
 	border-radius: 16px;
 	background: #888;
@@ -101,8 +99,8 @@ h1{
 }
 
 .rput{
-	height: 32px;
-	width: 192px;
+	height: 48px;
+	width: 246px;
 	margin: auto;
 	border-radius: 16px;
 	background: #acacac;
@@ -140,7 +138,7 @@ h1{
 
 @media only screen and (min-width: 768px){
 	#main{
-		max-height: 256px;
+		max-height: 260px;
 		flex-direction: row;
 	}
 }

@@ -14,10 +14,12 @@ document.activeElement.oninput = function(){
 	var err = '错误';
 	if(HEX == err | RGB == err | HSL == err){
 		actp.className = erro;
+      	document.querySelector('#tclr').content = '#888';
 	}else{
 		fhex.className = 'rput';
 		frgb.className = 'rput';
-		fhsl.className = 'rput';		
+		fhsl.className = 'rput';
+      	document.querySelector('#tclr').content = HEX;
 		document.querySelector('#main').style.setProperty('--cola',HEX);
 		document.querySelector('h1').style.setProperty('--colr',HEX);
 	}
