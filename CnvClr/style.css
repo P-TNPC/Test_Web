@@ -1,3 +1,7 @@
+*{
+    font-family: monospace,Noto Sans SC;
+    transition: all .3s ease-in-out;
+}
 body{
 	margin: 0;
 }
@@ -50,11 +54,9 @@ h1{
 	font-size: 19px;
 	font-family: monospace;
 	z-index: 1;
-	transition: all .3s ease-in-out;
 }
 #inpt input::-webkit-input-placeholder{
     color: #888;
-	transition: all .3s ease-in-out;
 }
 #inpt input:hover{
     background-color: var(--cola);
@@ -112,7 +114,6 @@ h1{
 	box-shadow: 0px 0px 8px #acacac;
 	white-space: nowrap;
 	overflow: hidden;
-	transition: all .3s ease-in-out;
 }
 .rput:hover{   
 	box-shadow: 0px 0px 10px var(--cola);
