@@ -74,9 +74,9 @@ h1{
 }
 #colr{
 	height: 85.8%;
-	width: 246px;
+	width: 248px;
 	margin: auto;
-	border-radius: 16px;
+	border-radius: 24px;
 	background: #888;
 	box-shadow: 0px 0px 8px var(--cola);
 	overflow: hidden;
@@ -100,9 +100,9 @@ h1{
 
 .rput{
 	height: 48px;
-	width: 246px;
+	width: 248px;
 	margin: auto;
-	border-radius: 16px;
+	border-radius: 24px;
 	background: #acacac;
 	box-shadow: 0px 0px 8px #acacac;
 	white-space: nowrap;
