@@ -1,5 +1,9 @@
+@font-face{
+    font-family: 'monospaces';
+    src : url('./CascadiaCode.ttf');
+}
 *{
-    font-family: monospace,Noto Sans SC;
+    font-family: monospaces,Noto Sans SC;
     transition: all .3s ease-in-out;
 }
 body{
