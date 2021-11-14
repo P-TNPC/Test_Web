@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'monospaces';
-    src : url('/CascadiaCode.ttf');
+    src : url('../CascadiaCode.ttf');
 }
 *{
     font-family: monospaces,Noto Sans SC;
@@ -56,7 +56,7 @@ h1{
 	text-indent: 13.5px;
 	color: #424242;
 	font-size: 19px;
-	font-family: monospace;
+	font-family: monospaces;
 	z-index: 1;
 }
 #inpt input::-webkit-input-placeholder{
