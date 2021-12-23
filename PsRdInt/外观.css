@@ -7,9 +7,9 @@
     transition: all .5s cubic-bezier(0.5,0,0.20,1);
 }
 html{
-//    background: url('https://api.mz-moe.cn/img.php')center center no-repeat; 
-//    background-size:cover;
-//    background-attachment:fixed;
+/*    background: url('https://api.mz-moe.cn/img.php')center center no-repeat;
+    background-size:cover;
+    background-attachment:fixed; */
     background-color: hsla(192,53.7%,97.2%,0.15);
 }
 body{
@@ -91,11 +91,11 @@ input:focus{
     z-index: 1;
     transition: all .15s cubic-bezier(0.5,0,0.20,1);
 }
-//#生:hover{
-//    background-color: hsla(192,53.7%,75.2%,0.6);
-//    box-shadow: 0 0 24px hsla(192,53.7%,70.2%,0.6);
-//    color: rgba(255,255,255,1);
-//}
+/*#生:hover{
+    background-color: hsla(192,53.7%,75.2%,0.6);
+    box-shadow: 0 0 24px hsla(192,53.7%,70.2%,0.6);
+    color: rgba(255,255,255,1);
+}*/
 #生:active{
     background-color: hsla(192,53.7%,60.2%,0.6);
     box-shadow: 0 0 2px hsla(192,53.7%,60.2%,0.7),
@@ -154,17 +154,17 @@ input:focus{
 .waves{
     position:relative;
     cursor:pointer;
-//    display:inline-block;
-//    overflow:hidden;
-//    text-align: center;
-    -webkit-tap-highlight-color:transparent;
+/*    display:inline-block;
+    overflow:hidden;
+    text-align: center;*/
+	-webkit-tap-highlight-color:transparent;
 }
 .waves .waves-animation{
     position:absolute;
-//    border-radius:50%;
+/*     border-radius:50%; */
     width:15%;
     height:7.2px;
-//    opacity:0;
+/*     opacity:0; */
     background:hsla(192,63.7%,60.2%,0.5);
     transition:all .7s ease-out!important;;
     transition-property:transform, opacity, -webkit-transform;
@@ -175,17 +175,17 @@ input:focus{
 .wave{
     position:relative;
     cursor:pointer;
-//    display:inline-block;
-//    overflow:hidden;
-//    text-align: center;
+/*    display:inline-block;
+    overflow:hidden;
+    text-align: center;*/
     -webkit-tap-highlight-color:transparent;
 }
 .wave .wave-animation{
     position:absolute;
-//    border-radius:50%;
+/*     border-radius:50%; */
     width:25px;
     height:25px;
-//    opacity:0;
+/*     opacity:0; */
     background:hsla(192,63.7%,60.2%,0.2);
     transition:all 1s ease-out!important;;
     transition-property:transform, opacity, -webkit-transform;
@@ -222,7 +222,7 @@ input:focus{
         margin-left: 65px;
     }
     #栏{
-        backdrop-filter: blur(16px);
+/*      backdrop-filter: blur(16px); */
         float: right;
         height: 400px;
         margin-top: 14.5px;
@@ -278,11 +278,11 @@ input:focus{
     	color: rgba(255,255,255,0.6);
        	font-weight: 400;
 		}
-//	#生:hover{
-//    	background-color: hsla(192,53.7%,75.2%,0.6);
-//    	box-shadow: 0 0 24px hsla(192,53.7%,70.2%,0.6);
-//    	color: rgba(255,255,255,1);
-//}
+/*	#生:hover{
+    	background-color: hsla(192,53.7%,75.2%,0.6);
+    	box-shadow: 0 0 24px hsla(192,53.7%,70.2%,0.6);
+    	color: rgba(255,255,255,1);
+}*/
 	#生:active{
     	background-color: hsla(192,43.7%,50.2%,0.6);
     	box-shadow: 0 0 2px hsla(192,53.7%,60.2%,0.7),
