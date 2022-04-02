@@ -4,10 +4,6 @@ ihex.oninput = function(){
 	this.value = this.value.replace(/[^#\da-f]/gi,'');
 	HEXto(this.value);
 	toHSL(R,G,B);
-	if(HEX.length > 7){
-		RGB = '错误';
-		HSL = '错误';
-	}
 	irgb.value = RGB;
 	ihsl.value = HSL;
 }
@@ -30,6 +26,7 @@ ihsl.oninput = function(){
 // HEX转RGB
 function HEXto(hex){
 	hex = hex.replace(/[#]/g,'');
+	HEX = '#'+hex;
 	switch(hex.length){
 		case 3:
 			R = parseInt(hex.substr(0,1).repeat(2),16);
@@ -42,16 +39,12 @@ function HEXto(hex){
 			B = parseInt(hex.substr(4,2),16);
 			break;
 		default:
-			R = 'ERROR'
+			R = 'ERROR';
+			HEX = '错误';
 			break;
 	}
 
-	HEX = '#'+hex;
-	if(R >= 0 && G >= 0 && B >= 0){
-		RGB = 'RGB'+'('+Math.round(R)+','+Math.round(G)+','+Math.round(B)+')';
-	}else{
-		RGB = '错误';
-	}
+	putRGB(R,G,B);
 }
 // RGB提取参数
 function RGBto(rgb){
@@ -60,35 +53,35 @@ function RGBto(rgb){
 	G = rgb[1];
 	B = rgb[2];if(!B){B = 0;}
 
-	RGB = 'RGB'+'('+Math.round(R)+','+Math.round(G)+','+Math.round(B)+')';
+	putRGB(R,G,B);
 }
 // HSL转RGB
 function HSLto(hsl){
 	var hsl = hsl.replace(/[hsl(%)]/gi,'').split(',');
-	H = hsl[0];
+	H = hsl[0]%360;
 	S = hsl[1]/100;
 	L = hsl[2]/100;
 	var x,y,m,rgb = [];
 	x = (1-Math.abs(L*2-1))*S;
 	y = (1-Math.abs(H/60%2-1))*x;
 	m = L-x/2;
-	switch (true) {
-		case 0 <= H && H < 60:
+	switch (Math.floor(H/60)) {
+		case 0:
 			rgb = [x,y,0];
 			break;
-		case 60 <= H && H < 120:
+		case 1:
 			rgb = [y,x,0];
 			break;
-		case 120 <= H && H < 180:
+		case 2:
 			rgb = [0,x,y];
 			break;
-		case 180 <= H && H < 240:
+		case 3:
 			rgb = [0,y,x];
 			break;
-		case 240 <= H && H < 300:
+		case 4:
 			rgb = [y,0,x];
 			break;
-		case 300 <= H && H < 360:
+		case 5:
 			rgb = [x,0,y];
 			break;
 	}
@@ -96,11 +89,7 @@ function HSLto(hsl){
 	G = (rgb[1]+m)*255;
 	B = (rgb[2]+m)*255;
 
-	if(R >= 0 && G >= 0 && B >= 0){
-		RGB = 'RGB'+'('+Math.round(R)+','+Math.round(G)+','+Math.round(B)+')';
-	}else{
-		RGB = '错误';
-	}
+	putRGB(R,G,B);
 	HSL = 'HSL'+'('+Math.round(H*10)/10+','+Math.round(S*1000)/10+'%,'+Math.round(L*1000)/10+'%)';
 }
 
@@ -116,7 +105,7 @@ function toHEX(R,G,B){
 		HEX = '错误';
 	}
 }
-	
+
 function toHSL(R,G,B){
 	// RGB转为0至1的值
 	var r,g,b;
@@ -156,9 +145,17 @@ function toHSL(R,G,B){
 	}else{
 		S = m/(1-Math.abs(L*2-1));
 	}
-	if(H >= 0 && S >= 0 && L >= 0){
+	if(H >= 0 & S >= 0 & L >= 0){
 		HSL = 'HSL'+'('+Math.round(H*10)/10+','+Math.round(S*1000)/10+'%,'+Math.round(L*1000)/10+'%)';
 	}else{
 		HSL = '错误';
+	}
+}
+
+function putRGB(R,G,B){
+	if(R >= 0 & G >= 0 & B >= 0 & R <= 255 & G <= 255 & B <= 255){
+		RGB = 'RGB'+'('+Math.round(R)+','+Math.round(G)+','+Math.round(B)+')';
+	}else{
+		RGB = '错误';
 	}
 }
