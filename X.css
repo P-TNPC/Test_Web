@@ -1,166 +1,90 @@
 @font-face{
-
     font-family: 'monospaces';
-
-    src : url('CascadiaCode.ttf');
-
+    src : url('CascadiaCode.woff2');
 }
 
 body{
-
-    background: url('https://cdn.tnpc.space:1024/API/image/api')center center no-repeat; 
-
+    background: url('https://cdn.tnpc.space:1024/API/image/api?cache')center center no-repeat; 
     background-size:cover;
-
     background-attachment:fixed;
-
     --体积: 1;
-
     --字大: 1;
-
 }
-
 footer{
-
     position: absolute;
-
     bottom: 6.18%;
-
     left: 0;
-
     right: 0;
-
     text-align: center;
-
     font-family: monospaces;
-
-    font-size: 86%;
-
     color: #363636ab;
-
 }
-
 a{color: #505686b8;}
 
 .总{
-
     position: absolute;
-
     top: 0;
-
     bottom: 0;
-
     left: 0;
-
     right: 0;
-
     flex-direction: column;
-
 }
 
 .中{display: flex; justify-content: center; align-items: center;}
-
 .行{display: inline-block;}
 
 .主{
-
     --width: calc(var(--体积)*250px);
-
     backdrop-filter: blur(32px);
-
     background-color: #fafafa66;
-
-    margin-bottom: 3.5px;
-
+    margin-bottom: calc(var(--体积)*3.5px);
     height: calc(var(--width)*0.618);
-
     width: var(--width);
-
-    border-radius: 12px;
-
+    border-radius: calc(var(--体积)*16px);
     text-align: center;
-
-    //line-height: 1;
-
+    /*line-height: 1;*/
 }
-
 .副{
-
     --width: calc(var(--体积)*250px);
-
     backdrop-filter: blur(32px);
-
     background-color: #fafafa66;
-
-    margin-top: 3.8px;
-
+    margin-top: calc(var(--体积)*3.8px);
     height: calc(var(--width)*0.235);
-
     width: var(--width);
-
-    border-radius: 12px;
-
-    //line-height: 1;
-
+    border-radius: calc(var(--体积)*16px);
+    /*line-height: 1;*/
 }
-
 .日期{
-
-    //padding-left: 3%;
-
-    //letter-spacing: -3px;
-
+    /*padding-left: 3%;*/
+    /*letter-spacing: -3px;*/
     font-size: calc(var(--字大)*45px);
-
     font-family: Ubuntu;
-
     font-weight: 500;
-
     color: #363636;
-
-    text-shadow: 0 0 5px rgba(95,80,95,0.75);
-
+    text-shadow: 0 0 calc(var(--字大)*5px) rgba(95,80,95,0.75);
 }
-
 .时间{
-
     font-size: calc(var(--字大)*64px);
-
-    font-family: monospace;
-
+    font-family: monospaces;
     font-weight: 700;
-
     line-height: 1;
-
     color: #363636;
-
-    text-shadow: 0 0 5px rgba(95,80,95,0.75);
-
+    text-shadow: 0 0 calc(var(--字大)*5px) rgba(95,80,95,0.75);
 }
-
 .秒{
     font-size: calc(var(--字大)*32px);
-    font-family: monospace;
+    font-family: monospaces;
     color: #363636;
-    text-shadow: 0 0 5px rgba(95,80,95,0.75);
-    transform:translateY(-10px);
+    text-shadow: 0 0 calc(var(--字大)*5px) rgba(95,80,95,0.75); 
 }
-
-.点{opacity: 100%;transition: opacity .5s ease-in;}
-.占{opacity: 0%;transition: opacity .5s ease-in;}
+.点{opacity: 100%;vertical-align: super;line-height: 0.8;transition: opacity .25s ease-in;}
+.占{opacity: 0;vertical-align: super;line-height: 0.8;transition: opacity .25s ease-in;}
 
 .天气{
-
-    font-size: calc(var(--字大)*40px);
-
-    font-family: Ubuntu,Noto Sans SC;
-
+    font-size: calc(var(--字大)*45px);
+    font-family: Ubuntu;
     font-weight: 500;
-
-    //line-height: 1;
-
+    line-height: 1;
     color: #363636;
-
-    text-shadow: 0 0 5px rgba(95,80,95,0.75);
-
+    text-shadow: 0 0 calc(var(--字大)*5px) rgba(95,80,95,0.75);
 }
