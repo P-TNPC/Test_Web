@@ -1,33 +1,38 @@
 <!doctype html>
 <html>
-	<head> 
-		<meta name="theme-color" content="hsl(192,63.7%,92.2%)"> 
-		<meta charset="UTF-8"> 
-		<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900"> 
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu"> 
-		<link href="外观.css" rel="stylesheet">
-      	<link rel="shortcut icon" href="https://TNPC.space/logo.webp" type="image/x-icon">
-      	<title>工具-伪随机整数</title>
-	</head> 
-	<body> 
-		<div id="罩" class="wave"></div> 
-		<div  id="底" style="height: 100%;"> 
-			<form id="主" action="javascript:出();"> 
-				<h1> 伪随机整数 </h1> 
-				<input id="小" type="tel" autocomplete="off" placeholder="最值" oninput="value=value.replace(/[^-?\d]/g,'')"> 
-				<input id="大" type="tel" autocomplete="off" placeholder="最值" oninput="value=value.replace(/[^-?\d]/g,'')"> 
-				<div id="副"> 
-					<input id="量" type="tel" autocomplete="off" placeholder="数量" oninput="value=value.replace(/\D/g,'')"> 
-					<button id="生" class="waves">生成</button> 
-				</div> 
-			</form> 
-			<div id="栏"> 
-				<p id="出" class="隐"><span>输出</span></p> 
-			</div> 
-		</div> 
-		<script src="生成.js"></script> 
-		<script src="外观.js"></script>  
-	</body>
-	<footer style="position: fixed;top: 86%;bottom: 0;left: 0;right: 0;margin: auto;opacity: 37%;height: 16px;width: 155px;font-size: 14px;z-index: 0;">Copyright &copy; 2021 <a href="https://TNPC.space/关于" style="color: hsla(192,53.7%,60.2%,0.5);">TNPC</a>.</footer>
+
+<head>
+	<meta name="theme-color" content="hsl(192,63.7%,92.2%)">
+	<meta charset="UTF-8">
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+	<link href="外观.css" rel="stylesheet">
+	<link rel="shortcut icon" href="https://TNPC.space/logo.webp" type="image/x-icon">
+	<title>工具-伪随机整数</title>
+</head>
+
+<body>
+	<div id="罩"></div>
+	<div id="底" style="height: 100%;">
+		<form id="主" action="javascript:出();">
+			<h1> 伪随机整数 </h1>
+			<input id="小" autocomplete="off" placeholder="最值" oninput="value=value.replace(/[^-?\d]/g,'')">
+			<input id="大" autocomplete="off" placeholder="最值" oninput="value=value.replace(/[^-?\d]/g,'')">
+			<div id="副">
+				<input id="量" autocomplete="off" placeholder="数量" oninput="value=value.replace(/\D/g,'')">
+				<button id="生" type="submit">生成</button>
+			</div>
+		</form>
+		<div id="栏">
+			<p id="出" class="隐"><span>输出</span></p>
+		</div>
+	</div>
+	<script src="生成.js"></script>
+	<script src="外观.js"></script>
+</body>
+<footer style="position:fixed;top:86%;bottom:0;left:0;right:0;margin:auto;opacity:37%;height:16px;width:155px;font-size:14px;z-index:1;">
+	Copyright &copy; 2021 <a href="https://TNPC.space/关于" style="color: hsla(192,53.7%,60.2%,0.5);">TNPC</a>.
+</footer>
+
 </html>
