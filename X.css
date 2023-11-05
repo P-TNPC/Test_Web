@@ -4,7 +4,7 @@
 }
 
 body{
-    background: url('https://cdn.tnpc.space:1024/API/image/api?cache')center center no-repeat; 
+    background: url('https://api.tnpc.xyz/rdImg/api?cache')center center no-repeat; 
     background-size:cover;
     background-attachment:fixed;
     --体积: 1;
