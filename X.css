@@ -82,7 +82,7 @@ a{color: #505686b8;}
 
 .天气{
     font-size: calc(var(--字大)*45px);
-    font-family: Ubuntu;
+    font-family: Ubuntu,'Noto Sans SC';
     font-weight: 500;
     line-height: 1;
     color: #363636;
